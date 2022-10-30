@@ -146,4 +146,4 @@ cython_debug/
 deploy/deploy.yaml
 
 # Ignore chromedriver.exe if included
-*.chromedriver.exe
+chromedriver.exe
