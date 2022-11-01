@@ -31,7 +31,7 @@ def open_browser(profilePath : str = None):
    
 
 def go_to_page(driver, newUrl):
-    if driver is None:
+    if driver is None or newUrl is None:
         return False
     driver.get(newUrl)
     return True

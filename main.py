@@ -39,6 +39,9 @@ class show_runner:
                         break
 
                 destinationUrl = sr.df.iloc[sr.currentIndex]['Link']
+                if 'MISSING' in destinationUrl:
+                        sr.currentIndex += 1
+                        return True
                 #nextUrl = df.iloc[currentIndex + 1]['Link']
 
 
@@ -53,8 +56,8 @@ class show_runner:
 
                 sr.currentIndex += 1
 
-                if chromeResult == "":
-                        sr.blacklisted_show_classes += showClass
+                if "localhost" in chromeResult:
+                        sr.blacklisted_show_classes.append( showClass)
                 
                 return True
 

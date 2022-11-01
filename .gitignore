@@ -147,3 +147,6 @@ deploy/deploy.yaml
 
 # Ignore chromedriver.exe if included
 chromedriver.exe
+
+#Ignoring dev notes that I use to not lose track of stuff.
+dev_notes.txt
